@@ -1,0 +1,12 @@
+import requests
+
+url = "https://openapiv1.coinstats.app/wallet/transactions"
+
+headers = {
+    "accept": "application/json",
+    "X-API-KEY": "GTuSD4+EB8grvtK4spLL+EV9nXHSK4EkIz9+MyuXeaI="
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
